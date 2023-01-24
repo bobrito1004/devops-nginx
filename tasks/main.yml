@@ -1,0 +1,9 @@
+---
+# tasks file for nginx
+- name: Install nginx
+  apt:
+    name:
+      - nginx
+- name: Start nginx
+  ansible.builtin.shell:
+    cmd: systemctl start nginx
